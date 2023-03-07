@@ -1,4 +1,76 @@
+@charset "UTF-8";
+header {
+  text-align: center;
+  /* margin: 0 auto; */
+}
 
+main {
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
 
-body{
+#question {
+  width: 900px;
+}
+
+.panel_content_wrapper {
+  display: grid;
+  place-items: center;
+}
+
+.panel_content_wrapper img {
+  margin-bottom: 20px;
+}
+
+#sortable {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#sortable div {
+  background-color: pink;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-family: 游ゴシック;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#hantei{
+  color: tomato;
+  font-size: 30px;
+  font-family: 游ゴシック;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tab-group{
+  display: flex;
+  justify-content: center;
+}
+.tab{
+  flex-grow: 1;
+  padding:5px;
+  list-style:none;
+  border:solid 1px #CCC;
+  text-align:center;
+  cursor:pointer;
+}
+.panel-group{
+  background:#eee;
+  padding: 20px;
+}
+.panel{
+  display:none;
+}
+.tab.is-active{
+  background:#F00;
+  color:#FFF;
+  transition: all 0.2s ease-out;
+}
+.panel.is-show{
+  display:block;
 }
