@@ -1,24 +1,65 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>カタビラのお勉強</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文法並べ替えゲーム</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 </head>
+
 <body>
-  <h1>犬と暮らしたい。鴨川をジョギングしたり山に登りたい。副業で年300万稼ぎたい。うほうほ</h1>
-  <div>
-    <h2>2023年やりたいことリスト</h2>
-      <ul>
-        <li>シミ取りレーザー完了</li>
-        <li>歯列矯正スタート</li>
-        <li>インラインスケートのレッスン受けきる</li>
-        <li>月イチ着物チャレンジ</li>
-        <li>5キロ痩せたーい</li>
-    </ul>
-    
-  </div>
+  <header>
+    <h1>文法並べ替えゲーム</h1>
+  </header>
+  <main>
+    <p>ドラッグ＆ドロップで単語を並べ替え正しい日本語の文にしてください</p>
+    <div id="question">
+
+      <!--タブ-->
+      <ul class="tab-group">
+        <li class="tab is-active">問題１</li>
+        <li class="tab">問題２</li>
+        <li class="tab">問題３</li>
+      </ul>
+
+      <!--タブを切り替えて表示するコンテンツ-->
+      <div class="panel-group">
+        <div class="panel is-show">
+          <div class="panel_content_wrapper">
+            <!-- <img src="#"> -->
+            <div id="sortable">
+            </div><!-- /#sortable -->
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /#question -->
+
+    <!-- <div>
+      <p>現在の順番の表示：<span class="toarray_text"></span></p>
+    </div> -->
+   <div>
+      <p id="hantei"></p>
+    </div>
+    <!-- <div id="judge">
+      <button id="judge_btn">答える</button>
+    </div> -->
+
+    <!-- <div id="answer">
+      <div id="user_answer">
+        あなたの答え「」
+      </div>
+      <div id="correct_answer">
+        正解は「」
+      </div>
+    </div> -->
+
+  </main>
+  <footer></footer>
+  <script src="script.js"></script>
 </body>
+
 </html>
